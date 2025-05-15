@@ -1,0 +1,473 @@
+/* Reset CSS (tùy chọn) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 60px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin-left: 30px;
+}
+
+header .main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .main-nav ul li a:hover {
+    color: #007bff;
+}
+
+header .search-box {
+    margin-left: 30px;
+    display: flex;
+}
+
+header .search-box input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+header .search-box button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .search-box button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 0; /* Loại bỏ padding cũ */
+    position: relative; /* Cần thiết cho định vị tuyệt đối của nội dung slide */
+}
+
+.hero-slider {
+    position: relative;
+}
+
+.hero-slide {
+    position: relative;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+}
+
+.hero-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Canh giữa nội dung */
+    text-align: center;
+    color: #fff;
+    z-index: 10; /* Đảm bảo nội dung nằm trên ảnh */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt cho nội dung */
+    border-radius: 10px;
+    width: 80%; /* Giới hạn chiều rộng nội dung */
+}
+
+.hero-slide-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-slide-content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .primary-button {
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.hero-buttons .primary-button:hover {
+    background-color: #0056b3;
+}
+
+/* Các стили cho Slick Carousel (dots) */
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slick-dots li {
+    margin: 0 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slick-dots .slick-active button {
+    background-color: #007bff;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.highlights h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.highlight-item {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-item i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.highlight-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.highlight-item p {
+    color: #555;
+}
+
+/* Programs Section */
+.programs {
+    padding: 80px 0;
+    background-color: #e9ecef;
+}
+
+.programs h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.program-tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.program-content {
+    padding: 20px;
+}
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.program-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.program-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.program-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.program-item p {
+    color: #555;
+}
+
+.small-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: #0056b3;
+}
+
+ /* News & Events Section */
+.news-events {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.news-events h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Tăng kích thước item */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden; /* Ẩn phần ảnh tràn ra ngoài */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng zoom ảnh */
+}
+
+.news-item:hover img {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+.news-item-content {
+    padding: 20px;
+}
+
+.news-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-item p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Campus Section */
+.campus {
+    padding: 60px 0;
+    background-color: #e9ecef;
+}
+
+.campus h2 {
+     font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.campus-slider {
+    position: relative;
+}
+
+.campus-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-info, .footer-links, .footer-social {
+    padding: 10px;
+}
+
+.footer-logo img {
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.footer-links h3, .footer-social h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    display: block; /* Để phần tử <a> chiếm toàn bộ chiều rộng của <li> */
+    padding: 5px 0; /* Thêm padding cho dễ click */
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: #007bff;
+}
+
+.footer-social ul li {
+    margin-bottom: 8px; /* Thêm khoảng cách giữa các icon */
+}
+
+.footer-social ul li i {
+    margin-right: 8px;
+}
+
+.copyright {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

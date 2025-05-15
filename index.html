@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại học FPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknRgZLC/vK535iIrEaPQp/0xhM6i9g6g+MO/jy4xg5Yspj6+LkuPjM5jvhetY90kgEQ3GaaAfbc06j34bpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm1g+MeXwnzaE5y6y9qrtK1cJeeV6bOJkwzCZ2p8rQejtGdaCGE2oqqcQyj17imds+jkjb9ZQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logofpt.png" alt="Đại học FPT"></a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Chương trình đào tạo</a></li>
+                    <li><a href="#">Tuyển sinh</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slide">
+                    <img src="images/slide1.jpg" alt="Slide 1">
+                    <div class="hero-slide-content">
+                        <h2>Chào mừng đến với Đại học FPT </h2>
+                        <p>Môi trường học tập năng động, sáng tạo, và định hướng nghề nghiệp.</p>
+                        <a href="#" class="button primary-button">Khám phá ngay</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="images/slide2.jpg" alt="Slide 2">
+                     <div class="hero-slide-content">
+                        <h2>Chương trình đào tạo chất lượng cao</h2>
+                        <p>Cập nhật theo xu hướng công nghệ và nhu cầu của thị trường lao động.</p>
+                        <a href="#" class="button primary-button">Xem chương trình</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h2>Điểm nổi bật</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Chất lượng đào tạo quốc tế</h3>
+                        <p>Chương trình học tiên tiến, cập nhật theo xu hướng thế giới.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Môi trường học tập hiện đại</h3>
+                        <p>Cơ sở vật chất tiên nghi, phòng lab chuyên nghiệp.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Đội ngũ giảng viên tận tâm</h3>
+                        <p>Giảng viên giàu kinh nghiệm, có kiến thức chuyên môn sâu rộng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs">
+            <div class="container">
+                <h2>Chương trình đào tạo</h2>
+                <div class="program-tabs">
+                    <button class="tab-button active" data-tab="undergraduate">Đại học</button>
+                    <button class="tab-button" data-tab="graduate">Sau đại học</button>
+                    <button class="tab-button" data-tab="short-courses">Khóa ngắn hạn</button>
+                </div>
+                <div class="program-content" id="undergraduate">
+                    <div class="program-list">
+                        <div class="program-item">
+                            <img src="images/it.jpg" alt="Công nghệ thông tin">
+                            <h3>Công nghệ thông tin</h3>
+                            <p>Đào tạo chuyên sâu về các lĩnh vực phát triển phần mềm, khoa học máy tính, an toàn thông tin...</p>
+                            <a href="#" class="button small-button">Xem chi tiết</a>
+                        </div>
+                        <div class="program-item">
+                            <img src="images/business.jpg" alt="Quản trị kinh doanh">
+                            <h3>Quản trị kinh doanh</h3>
+                            <p>Cung cấp kiến thức và kỹ năng quản lý, marketing, tài chính, nhân sự...</p>
+                            <a href="#" class="button small-button">Xem chi tiết</a>
+                        </div>
+                        </div>
+                </div>
+                <div class="program-content" id="graduate" style="display: none;">
+                    <p>Nội dung chương trình sau đại học sẽ được cập nhật.</p>
+                </div>
+                <div class="program-content" id="short-courses" style="display: none;">
+                    <p>Thông tin về các khóa ngắn hạn.</p>
+                </div>
+            </div>
+        </section>
+
+         <section class="news-events">
+            <div class="container">
+                <h2>Tin tức & Sự kiện</h2>
+                <div class="news-grid">
+                    <div class="news-item">
+                        <img src="images/news1.jpg" alt="Tin tức 1">
+                        <h3>Thông báo tuyển sinh 2024</h3>
+                        <p>Đại học FPT Hà Nội chính thức công bố thông tin tuyển sinh năm 2024...</p>
+                        <a href="#" class="read-more">Đọc thêm</a>
+                    </div>
+                    <div class="news-item">
+                        <img src="images/event1.jpg" alt="Sự kiện 1">
+                        <h3>Hội thảo "Công nghệ 4.0 và cơ hội nghề nghiệp"</h3>
+                        <p>Kính mời các bạn sinh viên và quý phụ huynh tham gia hội thảo...</p>
+                        <a href="#" class="read-more">Xem chi tiết</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="campus">
+            <div class="container">
+                <h2>Hình ảnh khuôn viên</h2>
+                 <div class="campus-slider">
+                    <div class="campus-slide"><img src="images/campus1.jpg" alt="Khuôn viên 1"></div>
+                    <div class="campus-slide"><img src="images/campus2.jpg" alt="Khuôn viên 2"></div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo-fpt-white.png" alt="Đại học FPT Hà Nội">
+                </div>
+                <p>Km29 Đại lộ Thăng Long, Thạch Thất, Hà Nội</p>
+                <p>Điện thoại: (024) 7300 5588</p>
+                <p>Email: fptuhanoi@fpt.edu.vn</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tuyển sinh</a></li>
+                    <li><a href="#">Chương trình đào tạo</a></li>
+                    <li><a href="#">Góc sinh viên</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Mạng xã hội</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                     <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Đại học FPT Hà Nội. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u12iz9JQQ+5Mr3OVwaeYsg8k53D9THp6F0mMgKeaEykkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-yHknRgZLC/vK535iIrEaPQp/0xhM6i9g6g+MO/jy4xg5Yspj6+LkuPjM5jvhetY90kgEQ3GaaAfbc06j34bpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // JavaScript đơn giản cho tab chương trình đào tạo
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const programContents = document.querySelectorAll('.program-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                programContents.forEach(content => content.style.display = 'none');
+
+                button.classList.add('active');
+                document.getElementById(tabId).style.display = 'block';
+            });
+        });
+
+        // JavaScript cho slider (Slick Carousel)
+        $(document).ready(function(){
+            $('.hero-slider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false
+            });
+
+             $('.campus-slider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+</html>
